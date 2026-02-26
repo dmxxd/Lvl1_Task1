@@ -12,15 +12,14 @@ namespace Lvl1_Task1
 {
     public partial class Form1 : Form
     {
-        int[] numbers = new int[10]; // массив для 10 чисел
-        int currentIndex = 0; // счетчик введенных чисел
+        int[] numbers = new int[10];
+        int currentIndex = 0;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        // добавление числа в массив
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (currentIndex < 10)
@@ -49,7 +48,6 @@ namespace Lvl1_Task1
             }
         }
 
-        // вычисление суммы элементов массива
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             int sum = 0;
@@ -62,7 +60,6 @@ namespace Lvl1_Task1
             btnReset.Enabled = true;
         }
 
-        // сброс программы
         private void btnReset_Click(object sender, EventArgs e)
         {
             numbers = new int[10];
